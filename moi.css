@@ -556,7 +556,7 @@ code from mainstyle.css file
     min-width: 45%;
     display: flex;
     padding: 0;
-    margin: 0;
+    margin-right: 10px;
     max-width: 148px;
 }
 
@@ -658,7 +658,6 @@ code from mainstyle.css file
 }
 
 .moiProductSlider .moiProductBlock {
-    border: 1px solid #2C72F5;
     background-color: #FFF;
     text-align: center;
     padding: 0px;
@@ -666,7 +665,7 @@ code from mainstyle.css file
     box-sizing: border-box;
     border-radius: 8px;
     height: 260px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     overflow: hidden;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.04);
 }
@@ -1286,6 +1285,7 @@ footer style
 .moiContainer .moi-menuIconBlock .moi-menuIcon {
     width: 30px;
     height: 30px;
+    padding: 0;
     box-sizing: border-box;
     cursor: pointer;
     border: none;
@@ -1293,6 +1293,13 @@ footer style
     outline: none;
     margin-right: 10px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggleMoiMenu > div {
+    width: 16px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -1441,18 +1448,6 @@ footer style
     color: #808080;
     /* display: none !important;*/
 }
-
-@media only screen and (max-width: 480px) {
-    .moiContainer button.moi-inputBtn,
-    .moiContainer .kumoiHuman,
-    .moiContainer .moi-menuIconBlock .moi-menuIcon {
-        height: 24px;
-        width: 24px;
-    }
-}
-
-
-
 
 /* local changes */
 
