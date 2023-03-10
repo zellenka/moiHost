@@ -175,9 +175,11 @@ klevu.extend(true, klevu.moiEvents, {
 				</div>
 				 <div class="moi-menuIconBlock">
                     <button id="moi-menuIcon" class="moi-menuIcon toggleMoiMenu disabled">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </button>
                  </div>
 						<form class="kumoiTypeform" action="" name="kumoiTypeform">
