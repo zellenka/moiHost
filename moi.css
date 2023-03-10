@@ -1,0 +1,1733 @@
+/* MODULE: moi */
+/* css/styles.css */
+/*
+==============================================================
+code from reset.css file
+==========================================================*/
+
+
+/*html,body {
+	height:100%;
+	min-height:100%;
+	margin: 0px;
+	padding: 0px;
+}*/
+
+body.moiActive {
+    height: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.moiContainer footer,
+.moiContainer header,
+.moiContainer hgroup,
+.moiContainer menu,
+.moiContainer nav,
+.moiContainer section {
+    display: block;
+}
+
+.moiContainer ol,
+.moiContainer ul {
+    list-style: none;
+}
+
+.kumoiProductIcons a:hover {
+    background: #e1e1e1;
+    color: #58595b;
+}
+
+.moiContainer button {
+    -webkit-appearance: button;
+}
+
+.moiContainer a:focus,
+.moiContainer a:active,
+.moiContainer input:focus,
+.moiContainer input:active,
+.moiContainer button:focus {
+    outline: none !important;
+    outline: 0 !important;
+}
+
+.moiContainer a,
+.moiContainer button,
+.moi-chatIconBtn,
+.moiContainer .moi-menuIconBlock,
+.moi-menuIconBlock .moi-menuIcon {
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+.moiContainer blockquote,
+.moiContainer q {
+    quotes: none;
+}
+
+.moiContainer img {
+    max-width: 100%;
+}
+
+.moiContainer blockquote:before,
+.moiContainer blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+.moiContainer table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.moiContainer * {
+    box-sizing: border-box;
+}
+
+.hideIt {
+    display: none !important;
+}
+
+
+/* ==============================================================
+code from mainstyle.css file
+========================================================== */
+
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+/* For mobile devices: */
+
+.moiContainer {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
+    display: none;
+    transition: all 0.5s ease;
+  /*  font-family: 'Roboto', sans-serif;*/
+    font-family: inherit;
+    font-size: 16px;
+    color: #4d4d4f;
+    line-height: 24px;
+    font-weight: normal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.moiContainer .clearleft {
+    clear: left !important;
+}
+
+.moiContainer .clearright {
+    clear: right !important;
+}
+
+.moiContainer .clearboth,
+.clearfix {
+    clear: both!important;
+}
+
+.moiContainer .kumoiArea {
+    direction: ltr;
+    height: 100%;
+    position: relative;
+    border: none;
+    width: 100%;
+    max-width: 748px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.moiContainer .kumoiareaInside {
+    box-sizing: border-box;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    background: #F3F3F6;
+    height: 100%;
+    border: none;
+}
+
+.moiContainer .kumoiareaContent,
+.moiContainer .kumoiareaHeader,
+.moiContainer .kumoiareaFooter {
+    padding: 0px 15px;
+}
+
+
+/* code for header area */
+
+.moiContainer .kumoiareaHeader {
+    background: #F3F3F6;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 54px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.moiContainer .kumoiLogo {
+    display: block;
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+}
+.moiContainer .kumoiLogo span{
+    display: block;
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    color: #5A5A5A;
+}
+
+.moiContainer .kumoiLogo img {
+    max-width: 100%;
+}
+
+
+/* code for footer area */
+
+.moiContainer .kumoiareaFooter {
+    background: #F3F3F6;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    width: 640px;
+    max-width: 100%;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+
+/* code for content area */
+
+.moiContainer .kumoiareaContent {
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px 15px;
+    z-index: 500;
+    background: #F3F3F6;
+    box-sizing: border-box;
+    border: none;
+
+    min-height: 100%;
+}
+
+.moiContainer .kumoiareaheaderrow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.moiContainer .kumoiareaheaderCol {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    vertical-align: middle;
+}
+
+.moiContainer .Kumoi-Closeicon {
+    background: none;
+    border-radius: 100%;
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.moiContainer .Kumoi-Closeicon span {
+    height: 34px;
+    width: 34px;
+    display: block;
+    /*background: url(../images/icon-arrow-down.png) center no-repeat;
+	background-size: 28px;	*/
+    margin: 0 auto;
+}
+
+.moiContainer .Kumoi-Closeicon:hover span {
+    opacity: 0.8;
+}
+
+.moiContainer .Kumoi-Cancelicon {
+    background: none;
+    border-radius: 100%;
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.moiContainer .Kumoi-Cancelicon span {
+    height: 34px;
+    width: 34px;
+    display: block;
+    /*background: url(../images/icon-arrow-down.png) center no-repeat;
+	background-size: 28px;	*/
+    margin: 0 auto;
+}
+
+.moiContainer .Kumoi-Cancelicon:hover span {
+    opacity: 0.8;
+}
+
+.moiContainer .kumoiHelp {
+    background: none;
+    border-radius: 100%;
+    height: 24px;
+    position: relative;
+    width: 24px;
+    margin-right: 4px !important;
+}
+
+.moiContainer .kumoiHelpImg {
+    border: 0px solid #FFF;
+    border-radius: 100%;
+    height: 100%;
+    padding: 0px;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.moiContainer .kumoiareaheaderCol a:hover,
+.moiContainer button:hover {
+    opacity: 0.70;
+}
+
+.moiContainer .kumoihumanImg {
+    border: 0px solid #FFF;
+    border-radius: 100%;
+    height: 100%;
+    padding: 0px;
+    vertical-align: bottom;
+    width: 100%;
+}
+.moiContainer .kumoicloseImg {
+    border: 0px solid #FFF;
+    border-radius: 100%;
+    height: 100%;
+    padding: 0px;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+
+.moiContainer .kumoiHuman {
+    height: 34px;
+    margin-left: 4px;
+    margin-top: 2px;
+    padding: 0px;
+    width: 34px;
+    border: none;
+    /*background: url(../images/icon-user-v1.png) center no-repeat;
+	background-size: 28px;*/
+}
+
+.moiContainer .kumoihumanName {
+    display: inline-block;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* code for content area */
+
+.moiContainer .kumoichatRow {
+    position: relative;
+    margin: 0px;
+}
+
+.moiContainer .kumoimsgBlock {
+    box-sizing: border-box;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.moiContainer .fromUser .kumoimsgBlock {
+    justify-content: flex-end;
+    margin: 15px 0 25px 0;
+}
+
+
+.moiContainer .fromkumoi .kumoimsgContent {
+    border: none;
+    border-radius: 8px 8px 8px 0px;
+    text-align: left;
+    padding: 10px;
+    font-weight: normal;
+    background: #2C72F5;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.04);
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+}
+
+.moiContainer .fromUser .kumoimsgContent {
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    outline: none;
+    font-size: 14px;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 8px 8px 0px 8px;
+}
+
+.moiContainer .fromkumoiIcon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 32px;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    background: #8B8B8B url(./images/moi-chat-icon.svg) center no-repeat;
+    background-size: 100%;
+}
+
+.kumoiHintmessage {
+    width: 100%;
+    font-size: 10px;
+    line-height: 14px;
+    color: rgba(171, 170, 170, 1);
+    font-style: italic;
+    font-weight: 300;
+    padding: 2px;
+    text-align: left;
+}
+
+.moiContainer .fromUserIcon {
+    display: none;
+    /*inline-block;*/
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    background: #c8eaf8;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+
+/* code for filter button list */
+
+.moiContainer .kumoifilterList {
+    margin-top: 1px;
+    padding: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.moiContainer .kumoiareaFooter .kumoifilterList {
+    text-align: center;
+    padding: 15px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 640px;
+    background: #F3F3F6;
+    z-index: 8;
+    display: none;
+}
+
+.kumoiareaFooter .kumoifilterList .klevuWrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.moiContainer .kumoifilterList.kumoifixOptions.active {
+    display: block;
+}
+
+.moiContainer .kumoifilterList a.kumoifiltername {
+    background: #FFFFFF;
+    border: 1px solid #328EDD;
+    background-color: #E0E8F1;
+    border-radius: 8px;
+    color: #000;
+    font-size: 14px;
+    padding: 6px 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.moiContainer .kumoiareaFooter .kumoifilterList a.kumoifiltername {
+    background: #E7E7E7;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-weight: normal;
+}
+
+
+/*.moiContainer .kumoifilterList a.kumoifiltername:hover {
+	background: #808080;
+	color: #FFF;
+	border-color: #808080;
+}*/
+
+.moiContainer .kumoiareaFooter .kumoifilterList a.kumoifiltername:hover,
+.moiContainer .kumoiareaFooter .kumoifilterList a.kumoifiltername.active {
+    background: #808080;
+    color: #FFF;
+    border-color: #808080;
+}
+
+.moiContainer .kumoifilterList a.active {
+    background: #EAEAEA;
+    color: #717171;
+    border-color: #717171;
+}
+
+
+/* code for product slider */
+
+.moiContainer .moiProductSlider {
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.moiContainer .moiProductSlider + .kumoiHintmessage {
+    margin-bottom: 10px;
+}
+
+.moiSliderArrowNav, .moiSliderdotNav {
+    display: none;
+}
+
+.moiContainer .moiProductSlidesContainer {
+    position: relative;
+    /* width: 300px; */
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.moiProductSlidesContainer .moiSlides {
+    width: 49.5%;
+    min-width: 45%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    max-width: 148px;
+}
+
+
+/* Next & previous buttons */
+
+.moiProductSlider .prev,
+.moiProductSlider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px;
+    margin-top: -15px;
+    color: #808080;
+    font-weight: 300;
+    font-size: 21px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Position the "next button" to the right */
+
+.moiProductSlider .next {
+    right: -18px;
+    border-radius: 3px 0 0 3px;
+}
+
+.moiProductSlider .prev {
+    left: -20px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.moiProductSlider .prev:hover,
+.moiProductSlider .next:hover {
+    opacity: 0.75;
+}
+
+
+/* The dots/bullets/indicators */
+
+.moiProductSlider .moiSliderdotNav {
+    margin-top: 5px;
+    text-align: center;
+    display: none;
+}
+
+.moiProductSlider .moiSliderdot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.moiProductSlider .active,
+.moiProductSlider .moiSliderdot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.moiProductSlider .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.moiProductSlider .moiProductBlock {
+    border: 1px solid #2C72F5;
+    background-color: #FFF;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 260px;
+    margin-right: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.04);
+}
+
+.moiProductSlider a.moiProductItem {
+    text-decoration: none;
+    color: #808080;
+    font-size: 100%;
+    display: block;
+}
+
+.moiProductSlider .moiProductImgwrap {
+    overflow: hidden;
+    width: 100% !important;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 140px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moiProductSlider .moiProductImgwrap img {
+    margin: 0px auto;
+    max-width: 100% !important;
+    max-height: 140px !important;
+    width: auto;
+    height: auto;
+    border: 0;
+    outline: 0;
+    display: block;
+    vertical-align: middle;
+}
+
+.moiProductSlider .moiProductDesc {
+    display: none;
+}
+
+.moiProductSlider .moiProductTitle,
+.moiProductSlider .moiProductTitle a {
+    color: #000;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moiProductSlider .moiProductPrice {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+}
+
+.moiProductSlider .moiProductPrice .moiprice {
+    display: inline-block;
+    width: auto;
+}
+
+.moiProductSlider .moiProductPrice .moiOrigPrice {
+    text-decoration: line-through;
+    display: none;
+}
+
+.moiProductSlider .moiProductPrice .moiSalePrice {
+    font-weight: bold;
+}
+
+.moiProductBrief {
+    padding: 12px 5px 0px 5px;
+    box-sizing: border-box;
+}
+
+.moiSlides .moiProductBrief {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.moiProductBtnBlock {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+a.moiQuickViewBtn {
+    color: #808080;
+    font-size: 11px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    background: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px auto;
+    border-top: 1px solid #ddd;
+}
+
+.moiProductSlider .moiProductlinks {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.moiProductSlider .moiProductlinks .moiProductLink[data-intent="quick-view"] {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #2C72F5;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moiProductSlider .moiProductlinks .moiProductLink[data-intent="show-similar-products"] {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* starts code for Overlay */
+
+.kumoiOverlay {
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255,255,255,0.2);
+    position: absolute;
+    backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+}
+
+.kumoiOverlayInner {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    border: none;
+    max-height: 85%;
+    overflow: auto;
+    margin-top: 7%;
+}
+
+.kumoiOverlayContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.kumoiOverlayProductWrapper {
+    position: relative;
+}
+
+.kumoiOverlayClose {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.closeIcon {
+    height: 24px;
+    width: 24px;
+    line-height: 100%;
+    background: #FFF;
+    border-radius: 100%;
+    color: #808080;
+    cursor: pointer;
+    border: 0px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    background: url(images/close-button.svg) bottom center;
+
+}
+
+.closeIcon:hover {
+    opacity: 1;
+}
+/*
+.closeIcon::before,
+.closeIcon::after {
+    position: absolute;
+    left: 14px;
+    content: ' ';
+    height: 14px;
+    width: 1px;
+    background-color: #808080;
+    top: 7px;
+}
+*/
+.closeIcon:before {
+    transform: rotate(45deg);
+}
+
+.closeIcon:after {
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 400px) {
+    .moiContainer .moiProductSlider {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        background: #F3F3F6;
+        text-align: left;
+    }
+}
+
+
+/* Ends Code for Product Slider */
+
+
+/* ovelay Product block */
+
+.moiQuickViewProductBlock {
+    width: 275px;
+    background-color: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 100%;
+    overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.08);
+}
+
+.moiQuickViewProductBlock .moiProductImgwrap {
+    width: 100%;
+    max-height: 270px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgba(217, 216, 216, 0.5);
+    display: block;
+    overflow: hidden;
+}
+
+.moiQuickViewProductBlock .moiProductImgwrap a {
+    display: block;
+}
+
+.moiQuickViewProductBlock .moiProductImgwrap img {
+    max-width: 100%;
+    max-height: 270px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.moiQuickViewProductBlock .moiProductDetails {
+    font-size: 14px;
+    color: #000;
+    line-height: 165%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.moiQuickViewProductBlock .moiProductTitle,
+.moiQuickViewProductBlock .moiProductTitle a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+}
+
+.moiQuickViewProductBlock .moiProductShortDesc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 13px;
+    line-height: 150%;
+}
+.moiQuickViewProductBlock .moiProductShortDesc.ksMoiOpenText{
+    -webkit-line-clamp: inherit;
+}
+.moiQuickViewProductBlock .moiProductPrice {
+    border-top: 1px solid #D9D8D8;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.moiQuickViewProductBlock .moiProductPrice .moiprice {
+    display: inline-block;
+    width: auto;
+    color: #000;
+
+}
+.moiQuickViewProductBlock .moiProductPrice .moiOrigPrice {
+    text-decoration: line-through;
+}
+
+/* Ends code for overlay*/
+
+
+/* code for typing form*/
+
+.moiContainer .kumoiTypeform {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.moiContainer .kumoiTypefield {
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+}
+
+.moiContainer .kumoiTypefield:focus {
+    border: 1px solid #bcbcbc;
+    outline: none;
+}
+
+.moiContainer .kumoiareaheaderCol.kumoiheaderCol1 {
+    width: 50%;
+}
+
+.kumoiareaheaderCol.kumoiheaderCol2 {
+    width: 50%;
+    text-align: right;
+}
+
+.moiContainer .kumoiareaheaderCol.kumoiheaderCol2 a {
+    margin: 0px;
+    vertical-align: top;
+    padding: 0px;
+    display: inline-block;
+}
+
+
+/* css for Voice Search icon*/
+
+.moiContainer .klevuVoiceSearchImage {
+    position: absolute;
+    right: 34px;
+    top: 50%;
+    line-height: 24px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: #ededed;
+    border-radius: 50px;
+    padding: 3px;
+    margin-top: -12px;
+    box-sizing: border-box;
+}
+
+
+/* ends css for Voice Search*/
+
+
+/* For other than mobile devices: */
+
+@media only screen and (min-width: 769px) {
+    .moiContainer .kumoiArea {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border: none;
+        position: relative;
+        max-width: 750px;
+    }
+    .moiContainer .kumoiareaFooter {
+        width: 748px;
+        left: auto;
+        right: auto;
+        bottom: 0;
+    }
+    .moiContainer .kumoiareaHeader {
+        width: 100%;
+        left: auto;
+        right: auto;
+        top: 0;
+        box-sizing: border-box;
+        max-width: 748px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .moiContainer .kumoiareaheaderCol.kumoiheaderCol1 {
+        width: 60%;
+    }
+    .moiContainer .kumoiareaheaderCol.kumoiheaderCol2 {
+        width: 40%;
+    }
+    .moiContainer .kumoihumanImg {
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .moiContainer .kumoicloseImg {
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .moiContainer div#waveEffect {
+        width: 38px;
+        margin-right: 0px;
+        min-width: 38px;
+    }
+    .moiContainer .Kumoi-Closeicon span,
+    .kumoiHuman {
+        height: 24px;
+        width: 24px;
+        background-size: 24px;
+    }
+    .moiContainer .Kumoi-Cancelicon span,
+    .kumoiHuman {
+        height: 24px;
+        width: 24px;
+        background-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .moiContainer .kumoiareaContent {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .moiContainer .kumoiareaFooter .kumoifilterList {
+        margin-left: 0px;
+        width: 100%;
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
+    .moiContainer .fromUserIcon {
+        bottom: 2px;
+        height: 24px;
+        right: 2px;
+        line-height: 24px;
+        width: 24px;
+    }
+    .moiContainer .kumoiTypefield {
+        box-sizing: border-box;
+        padding: 10px 12px;
+        width: 100%;
+    }
+    .moiContainer .kumoiareaFooter .kumoifilterList a.kumoifiltername {}
+    .moiContainer .kumoiProductsblock,
+    .moiContainer .kumoiproductslider {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .moiContainer .kumoichatRow {
+        margin: 0;
+        position: relative;
+    }
+    .moiContainer .kumoihumanName {
+        line-height: 10px;
+        margin-bottom: 5px;
+        vertical-align: middle;
+        width: 32px;
+    }
+}
+
+.moiContainer .kumoifilterList.klevuResetSearch {
+    margin: 0px 0px 4px 0px;
+}
+
+
+/*
+==============================================================
+changes applied on 21-01-2020
+==========================================================*/
+
+
+/*----------
+Ask Moi icon style
+---------*/
+
+.moi-chatIconBtn {
+    display: flex;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    margin: 0px;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #787878;
+    font-family: inherit;
+    border: 1px solid #ABAAAA;
+    border-radius: 30px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    box-sizing: border-box;
+    min-width: 100px;
+    outline: none;
+    cursor: pointer;
+    z-index: 9;
+    background-color: #FFF;
+    padding-right: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 640px) {
+    .moi-chatIconBtn.toggleMoi {
+        display: flex !important;
+    }
+    .moiContainer.active {
+        display: block !important;
+        z-index: 10001;
+    }
+}
+
+.moi-chatIconBtn:hover {
+    box-shadow: 0 9px 19px rgba(0, 0, 0, 0.20), 0 8px 6px rgba(0, 0, 0, 0.12);
+    background-color: #f8f8f8;
+}
+
+.moi-chatIconBtn .moi-chatIcontxt {
+    display: inline-block;
+    line-height: 21px;
+    height: 21px;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+.moi-chatIconBtn .moi-chatIcon {
+    max-width: 24px;
+    max-height: 24px;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*----------
+footer style
+---------*/
+
+.kumoiInputWrapper {
+    padding: 0 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.moiContainer .kumoiFooterWrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.moiContainer .moi-menuIconBlock {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: background-color .2s ease;
+    vertical-align: middle;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.moiContainer .moi-menuIconBlock .moi-menuIcon {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    background-color: #E7E7E7;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.moiContainer .moi-menuIconBlock .moi-menuIcon span {
+    border: 1px solid #000;
+    width: 16px;
+    background-color: #000;
+    margin: 2px 0;
+}
+
+.moiContainer .moi-menuIconBlock .moi-menuIcon span:nth-child(2) {
+    width: 12px;
+}
+
+.moiContainer .moi-menuIconBlock .moi-menuIcon.active span {
+    opacity: 0;
+}
+
+.moiContainer .moi-menuIconBlock .moi-menuIcon.active span:nth-child(2) {
+    width: 16px;
+    opacity: 1;
+}
+
+.moiContainer .moi-menuIconBlock .moi-menuIcon.disabled {
+    background-image: url('images/moi-minus-icon.svg') !important;
+    transform: rotate(-45deg);
+    opacity: 0.5;
+    pointer-events: none;
+    display:none;
+}
+
+.moiContainer .moi-menuIconBlock .moi-menuIcon img {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.moiContainer .moi-menuOptions {
+    position: absolute;
+    width: 100%;
+    bottom: 55px;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 10;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    position: absolute;
+    backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+}
+
+.moiContainer .moi-menuOptions.active {
+    display: block;
+}
+
+.moiContainer .moi-menuOptions .klevuWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.moiContainer .moiContainer img {
+    max-width: 100%;
+}
+
+.moiContainer a.moi-menuOption {
+    word-break: break-word;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    padding: 8px 12px;
+    min-width: 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2C72F5;
+    margin-bottom: 10px;
+}
+
+.moiContainer a.moi-menuOption:hover {
+    color: #000;
+}
+
+.moiContainer .moi-menuOptions .moi-menuOption:last-child {
+    border-bottom: 0px;
+}
+
+.moiContainer button.moi-inputBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    /* background-image: url('images/moi-input-icon.svg'); */
+    cursor: pointer;
+    background-color: #2C72F5;
+}
+
+.moiContainer button.moi-inputBtn::before {
+/* arrow right css */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+
+.moiContainer form.kumoiTypeform {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.moiContainer form.kumoiTypeform .kumoiTypefield {
+    box-sizing: border-box;
+    padding: 8px 45px 8px 14px;
+    border-radius: 8px;
+    height: 50px;
+}
+
+.moiContainer .kumoichatRow.kumoichatDate {
+    font-size: 10px;
+    text-align: center;
+    color: #808080;
+    /* display: none !important;*/
+}
+
+@media only screen and (max-width: 480px) {
+    .moiContainer button.moi-inputBtn,
+    .moiContainer .kumoiHuman,
+    .moiContainer .moi-menuIconBlock .moi-menuIcon {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+
+
+
+/* local changes */
+
+.moiProductSlider .moiProductShortDesc {
+    display: none;
+}
+
+
+/* Form style */
+
+.kumoiForm {
+    display: block;
+    padding-top: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.kumoiFormTitle {
+    color: #808080;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.kumoiBtn {
+    background: #808080;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 8px 15px;
+    box-shadow: none;
+    -webkit-appearance: none;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    border: none;
+}
+
+.kumoiForm .kumoiField {
+    padding: 8px 10px;
+    border: 1px solid #D9D8D8;
+    width: 100%;
+    height: 34px;
+    margin-bottom: 12px;
+    max-width: 100%;
+    outline: none;
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+.kumoiForm textarea.kumoiField {
+    min-height: 65px;
+}
+
+.kumoiForm .kumoiFeedbackbtns {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+
+.kumoiForm .kumoiFeedbackbtns label {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+/* HIDE RADIO */
+
+.kumoiForm [type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* IMAGE STYLES */
+
+.kumoiForm [type=radio]+img {
+    cursor: pointer;
+}
+
+
+/* CHECKED STYLES */
+
+.kumoiForm [type=radio]:checked+img {
+    border: 2px solid #D9D8D8;
+    border-radius: 100%;
+    outline: none;
+}
+
+.kumoiForm .ratinglabel {
+    color: #D1CBCB;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.kumoiForm ::-webkit-input-placeholder {
+    color: #D1CBCB;
+}
+
+.kumoiForm ::-moz-placeholder {
+    color: #D1CBCB;
+}
+
+.kumoiForm :-ms-input-placeholder {
+    color: #D1CBCB;
+}
+
+.kumoiForm ::-ms-input-placeholder {
+    color: #D1CBCB;
+}
+
+.kumoiForm ::placeholder {
+    color: #D1CBCB;
+}
+
+.kumoiForm ::-webkit-input-placeholder {
+    /* Edge */
+    color: #D1CBCB;
+}
+
+.kumoiForm :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #D1CBCB;
+}
+
+.moiQuickViewFormField.invalid {
+    border-color: red;
+}
+
+
+/* Ends form style */
+
+.kumoiProductsblock, .kumoiproductslider {
+    overflow: hidden;
+    height: 300px;
+}
+
+
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 641px) {
+    .moi-chatIconBtn,
+    .moiContainer{
+        display: none!important;
+    }
+    .moi-chatIconBtn.toggleMoi {
+        display: flex !important;
+    }
+    .moiContainer.active {
+        display: block !important;
+        z-index: 10001;
+        height: 500px;
+        min-height: 500px;
+        top: auto;
+        left: auto;
+        width: 570px;
+        right: 20px;
+        box-shadow: 5px 5px 5px 5px #888888;
+        bottom: 20px;
+    }
+    .moiContainer .kumoiareaFooter {
+        width: 570px;
+        bottom: 20px;
+    }
+
+    .moiContainer .kumoiareaFooter .kumoifilterList{
+        left:auto;
+        right: 20px;
+        max-width: 570px;
+        bottom: 74px;
+    }
+    .moiContainer .moi-menuOptions{
+        left: 0;
+        right: 0;
+        max-width: 570px;
+    }
+    .moiContainer .kumoiareaHeader{
+        max-width: 570px;
+        top: auto;
+        bottom: 466px;
+    }
+    .kumoiOverlayInner{
+        margin-top: 0%;
+        max-height: 100%;
+    }
+    .moiContainer .moiProductSlider {
+        width: 460px;
+    }
+    .moiContainer .moiProductSlidesContainer{
+        width: 450px;
+    }
+
+
+
+
+}
+
+
+/* Main display */
+.moiBar {
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    /* border-bottom: 0.5px #999 solid; */
+    text-align: right;
+}
+.kumoiareaheaderCol .moiBar {
+    padding: 0;
+}
+.moiBarText {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.moiBarText span{
+    font-size: 10px;
+    margin-right: 6px;
+    color: #000;
+}
+.openMoi, .ksMoiCancelIcon {
+    position: relative;
+    border-radius: 10px;
+    border: 0.5px solid #999;
+    width: 45px;
+    height: 20px;
+}
+.ksMoiCancelIcon span, .openMoi span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    margin: 0;
+    line-height: 1;
+    height: 6px;
+    left: 5px;
+    color: #000;
+}
+.openMoi span {
+    color: #999999;
+    right: 3px;
+}
+.openMoi::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ABB0BC;
+    transition: 0.5s;
+}
+
+.moiSwitchOn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transition: 0.5s;
+    right: 3px;
+    background: #97C73E;
+}
+
+@media only screen and (min-width: 640px) {
+    .moiBar{ display: none;}
+}
+.moiContainer .moiBar{
+    border-bottom: 0px;
+    padding-top: 4px;
+}
